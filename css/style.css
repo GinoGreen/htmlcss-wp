@@ -22,6 +22,8 @@ body {
 
 #logo {
    width: 180px;
+   padding-right: 20px;
+   border-right: 1px solid #E7E7E7;
    cursor: pointer;
 }
 
@@ -39,11 +41,17 @@ body {
    background-color: rgba(0, 0, 0, 0.2);
 }
 
+h1, h4, footer {
+   color: black;
+}
+/* finish global classes */
+
 /* HEADER */
 .top-header, .jambotron {
    margin-bottom: 25px;
 }
 
+/* menu  */
 .top-header .menu {
    margin-top: 25px;
 }
@@ -64,6 +72,7 @@ body {
    color: #CE6E38;
 }
 
+/* jambotron */
 header .jambotron {
    height: 400px;
    background-image: url('../img/banner.jpg');
@@ -81,21 +90,18 @@ header .jambotron {
 /* MAIN */
 main {
    margin-bottom: 10px;
-   background-color: #0186FF;
 }
 
 .main-top, .main-left, .main-center, .main-right {
-   background-color: #ABCFE7;
-   margin-bottom: 10px; 
+   margin-bottom: 20px; 
+}
+
+.main-top h1 {
+   font-weight: bolder;
 }
 
 .main-left, .main-center, .main-right {
-   min-height: 400px; /* da rimuovere */
    float: left;
-}
-
-.main-top {
-   height: 70px;
 }
 
 .main-left, .main-right {
@@ -108,8 +114,36 @@ main {
    margin-right: 1%;
 }
 
+.image-left, .image-center, .image-right {
+   height: 200px;
+}
+
+.main-bottom h4 {
+   margin: 25px 0;
+}
+
+/* main image  */
+.main-bottom .image-left {
+   background-image: url('../img/img-1.jpg');
+}
+
+.main-bottom .image-center {
+   background-image: url('../img/banner-2.jpg');
+}
+
+.main-bottom .image-right {
+   background-image: url('../img/img-3.jpg');
+}
+
 /* FOOTER */
 footer {
-   height: 50px;
-   background-color: #8801FE;
+   font-size: 18px;
+   font-weight: bold;
+   text-align: center;
+}
+
+footer::after {
+   content: ' \2665';
+   color: red;
+   font-size: 30px;
 }
