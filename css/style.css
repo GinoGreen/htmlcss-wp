@@ -4,6 +4,10 @@
    box-sizing: border-box;
 }
 
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
 .clearfix::after {
    content: "";
    display: table;
@@ -15,18 +19,34 @@
    margin: 0 auto 10px auto;
 }
 
+#logo {
+   width: 180px;
+   cursor: pointer;
+}
 
 /* HEADER */
-header .top-header, header .jambotron {
-   margin-bottom: 20px;
+.top-header, .jambotron {
+   margin-bottom: 25px;
 }
 
-header .top-header {
-   height: 100px;
+.top-header .menu {
+   margin-top: 25px;
 }
 
-.top-header .logo {
-   
+.menu ul li {
+   padding-right: 10px;
+   list-style: none;
+   display: inline-block;
+}
+
+.menu ul li a, .menu ul li a:visited {
+   color: #9F9F9F;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+   color: #CE6E38;
 }
 
 header .jambotron {
