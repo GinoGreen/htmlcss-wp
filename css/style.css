@@ -1,0 +1,68 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.clearfix::after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.container {
+   width: 80%;
+   margin: 10px auto;
+}
+
+
+/* HEADER */
+header .top-header, header .jambotron {
+   margin-bottom: 20px;
+}
+
+header .top-header {
+   height: 100px;
+   background-color: #E579E6;
+}
+
+header .jambotron {
+   min-height: 400px; /* da rimuovere */
+   background-color: #E1D67A;
+}
+
+/* MAIN */
+main {
+   margin-bottom: 10px;
+   background-color: #0186FF;
+}
+
+.main-top, .main-left, .main-center, .main-right {
+   background-color: #ABCFE7;
+   margin-bottom: 10px; 
+}
+
+.main-left, .main-center, .main-right {
+   min-height: 400px; /* da rimuovere */
+   float: left;
+}
+
+.main-top {
+   height: 70px;
+}
+
+.main-left, .main-right {
+   width: 19.5%;
+}
+
+.main-center {
+   width: 59%;
+   margin-left: 1%;
+   margin-right: 1%;
+}
+
+/* FOOTER */
+footer {
+   height: 50px;
+   background-color: #8801FE;
+}
