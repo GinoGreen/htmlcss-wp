@@ -6,6 +6,7 @@
 
 body {
    font-family: 'Montserrat', sans-serif;
+   color: #9F9F9F;
 }
 
 .clearfix::after {
@@ -22,6 +23,16 @@ body {
 #logo {
    width: 180px;
    cursor: pointer;
+}
+
+.background-rules {
+   background-position: center;
+   background-size: cover;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.b-radius {
+   border-radius: 12px;
 }
 
 /* HEADER */
@@ -50,8 +61,9 @@ body {
 }
 
 header .jambotron {
-   min-height: 400px; /* da rimuovere */
-   background-color: #E1D67A;
+   min-height: 400px;
+   background-image: url('../img/banner.jpg');
+   color: #FFF;
 }
 
 /* MAIN */
